@@ -1,6 +1,7 @@
 #pragma once
 #include "Entity.h"
 #include "Hero.h"
+#include "Level.h"
 
 class Game
 {
@@ -24,7 +25,8 @@ private:
 	// DATA MEMBERS
 	Window m_Window;
 	Hero m_Hero;
-
+	Level m_level;
+	float m_scale{ 2.5f };
 
 	// FUNCTIONS
 	void Initialize( );

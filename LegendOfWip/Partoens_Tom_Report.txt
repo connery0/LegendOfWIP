@@ -1,0 +1,20 @@
+Tom Partoens	1DAE17
+The Legend of WIP 	(working title)
+
+Gameplay is gebaseerd op 2d The legend of Zelda games, maar met nieuwe items.
+
+Week 03
+	Testable Functions: (visual tests)
+		Can draw sprite(icons) from file
+		Can draw from chosen rect on spritesheet
+
+Week 04
+	Sprites worden geplaats met transformatie matrixen
+	Frame object kan animatie informatie bevaten over spritesheets
+	Entity kan Frame informatie gebruiken bij het tekenen (positie spritesheet en spiegeling Y/N).
+	Hero kan rondlopen met de juiste animaties.
+
+Week 05
+	Screens worden getekent
+	Tiles worden uit een string gelezen (needs more info+out of file next)
+	Scale kan worden ingesteld met + en - (resolution options)

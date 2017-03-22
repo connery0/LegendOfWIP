@@ -21,6 +21,8 @@ protected:
 	float m_TextureHeight;
 	float m_secCounter{ 0 };
 	float FPS = 4;
-	float m_speed{ 64 };
+
+	//float m_speed{ 64 };
+	float m_speed{ 32 };
 };
 

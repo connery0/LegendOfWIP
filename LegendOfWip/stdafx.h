@@ -5,6 +5,8 @@
 #pragma once
 
 #include "targetver.h"
+#include "utils.h"
+
 
 // TODO: reference additional headers your program requires here
 // SDL libs

@@ -1,5 +1,5 @@
 #pragma once
-#include "utils.h"
+#include "stdafx.h"
 #include "Texture.h"
 #include "Frame.h"
 
@@ -16,7 +16,6 @@ public:
 
 protected:
 	Texture m_Texture;
-	Rectf m_TextClip;
 	bool m_VMirror{ false };
 	bool m_HMirror{ false };
 	Frame m_CurrentFrame{ Point2f(0,0) };

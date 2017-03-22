@@ -12,8 +12,8 @@ void Hero::Draw()
 	
 	//set textclip on right area before calling the parent draw function
 	//m_TextClip.left += 16;
-	m_TextClip.bottom -= m_TextureHeight;
-	m_HMirror = true;
+	//m_TextClip.bottom -= m_TextureHeight;
+	//m_HMirror = true;
 	
 
 	Entity::Draw();

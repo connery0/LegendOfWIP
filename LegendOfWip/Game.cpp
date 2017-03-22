@@ -1,10 +1,20 @@
 #include "stdafx.h"
 #include "Game.h"
 
-Game::Game( const Window& window ) 
+const std::string testLvlString = 
+"|22,1|23,1|18,1|19,1|22,1|23,1" 
+"|06,1|07,1|22,1|23,1|03,1|03,1" 
+"|10,1|12,1|04,1|07,1|02,1|03,1" 
+"|16,1|16,1|16,1|05,1|03,1|03,1" 
+"|20,1|17,1|16,1|05,1|00,1|00,1";
+
+
+
+Game::Game(const Window& window)
 	:m_Window{ window }
 	//,m_Hero("Recources/Images/LinkCleaned.png",Rectf(0,-638,16,16))
-	,m_Hero("Recources/Images/LinkCleaned.png")
+	, m_Hero("Recources/Images/LinkCleaned.png")
+	, m_level(Point2f(64,128), 6, 5, testLvlString)
 {
 	Initialize( );
 }
@@ -14,8 +24,10 @@ Game::~Game( )
 	Cleanup( );
 }
 
-void Game::Initialize( )
+void Game::Initialize()
 {
+	float T =(5 % 3);
+	std::cout << "" + (5 % 3) << std::endl;
 }
 
 void Game::Cleanup( )
@@ -33,9 +45,9 @@ void Game::Draw( )
 
 	glPushMatrix();
 
-	glScalef(4.0f, 4.0f, 1.0f);
+	glScalef(m_scale, m_scale, 1.0f);
 
-
+	m_level.DrawBackground();
 	m_Hero.Draw();
 	glPopMatrix();
 
@@ -63,6 +75,17 @@ void Game::ProcessKeyDownEvent( const SDL_KeyboardEvent & e )
 	case SDLK_DOWN:
 		//std::cout << "`Right arrow key released\n";
 		m_Hero.SetYSpeed(-1);
+		break;
+	case SDLK_KP_PLUS:
+		//std::cout << "`Right arrow key released\n";
+		++m_scale;
+		std::cout << "!!!!!!!!!!!!!!!!!!!!!!! "<< std::endl;
+		break;
+	case SDLK_KP_MINUS:
+		//std::cout << "`Right arrow key released\n";
+		if (m_scale > 1) {
+			--m_scale;
+		}
 		break;
 		//case SDLK_1:
 		//case SDLK_KP_1:

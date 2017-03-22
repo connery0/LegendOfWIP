@@ -1,15 +1,15 @@
 #include "stdafx.h"
 #include "Entity.h"
 
-Entity::Entity() :m_Texture{ "Recources/Diamond.png" }, m_TextClip{ Rectf{0,0,48,48} }
+Entity::Entity() :m_Texture{ "Recources/Diamond.png" }
 {
 }
 
-Entity::Entity(std::string TexturePath) : m_Texture{ TexturePath }, m_TextClip{ Rectf(0,0,16,16)}
+Entity::Entity(std::string TexturePath) : m_Texture{ TexturePath }
 {
 }
 
-Entity::Entity(std::string TexturePath,Rectf textClip) : m_Texture{ TexturePath }, m_TextClip{ textClip }
+Entity::Entity(std::string TexturePath,Rectf textClip) : m_Texture{ TexturePath }
 {
 }
 
