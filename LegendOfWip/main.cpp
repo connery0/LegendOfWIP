@@ -11,7 +11,8 @@ int main( int argc, char *argv[] )
 
 		//Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 160.0f, 160.0f } };
 
-		Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 1280.0f, 800.0f } };
+		Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 400.0f, 400.0f } };
+		//Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 1280.0f, 800.0f } };
 		//Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 1200.0f, 700.0f} };
 		core.Run();
 	}

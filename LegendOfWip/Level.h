@@ -19,6 +19,7 @@ class Level
 public:
 	Level(Point2f pos,int width, int height, std::string tileString);
 
+	bool IsPassable(float x, float y);
 
 	void DrawBackground();
 
