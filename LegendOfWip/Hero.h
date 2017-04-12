@@ -1,7 +1,7 @@
 #pragma once
 #include "Entity.h"
 #include "HeroFrames.h"
-#include "Level.h"
+#include "Room.h"
 class Hero :
 	public Entity
 {
@@ -11,7 +11,7 @@ public:
 
 	Hero(std::string TexturePath);
 	virtual void Draw() override;
-	virtual	void Update(float elapsedSec,Level& currentLevel);
+	void Update(float elapsedSec, std::unique_ptr<Room> &currentLevel);
 
 	void SetXSpeed(float xSpeed);
 	void SetYSpeed(float ySpeed);

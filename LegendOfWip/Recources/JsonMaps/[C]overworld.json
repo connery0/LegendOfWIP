@@ -1,0 +1,34 @@
+{
+ "rooms":[
+		{
+		"file":"Recources/JsonMaps/TempleGate10x10.json",
+		"x":0,
+		"y":320,
+		"w":10,
+		"h":10		
+		},{
+		"file":"Recources/JsonMaps/FrontTempleGate10x10.json",
+		"x":0,
+		"y":160,
+		"w":10,
+		"h":10				
+		},{
+		"file":"Recources/JsonMaps/PathTemple10x10.json",
+		"x":160,
+		"y":160,
+		"w":10,
+		"h":10
+		},{
+		"file":"Recources/JsonMaps/StartPath10x10.json",
+		"x":160,
+		"y":320,
+		"w":10,
+		"h":10
+		},{
+		"file":"Recources/JsonMaps/LongPath10x20.json",
+		"x":320,
+		"y":320,
+		"w":10,
+		"h":20
+		}]
+}

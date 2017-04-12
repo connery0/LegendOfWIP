@@ -21,8 +21,10 @@ void Hero::Draw()
 	//utils::DrawPoint(Pos, 5);
 }
 
-void Hero::Update(float elapsedSec, Level& currentLevel)
+
+void Hero::Update(float elapsedSec, std::unique_ptr<Room> &currentLevel)
 {
+
 	int xOffset = 0;
 	if (m_direction.x < 0) { xOffset = -8; }
 	if (m_direction.x > 0) { xOffset = 8; }
@@ -31,14 +33,14 @@ void Hero::Update(float elapsedSec, Level& currentLevel)
 	if (m_direction.y > 0) { yOffset = 8; }
 	
 	//TODO: simply do +8 and -8 check in IsPassable?
-	if (currentLevel.IsPassable(Pos.x +xOffset+elapsedSec * m_direction.x * m_speed, Pos.y-6)
-		&&currentLevel.IsPassable(Pos.x + xOffset + elapsedSec * m_direction.x * m_speed, Pos.y+4)
+	if (currentLevel->IsPassable(Pos.x +xOffset+elapsedSec * m_direction.x * m_speed, Pos.y-6)
+		&&currentLevel->IsPassable(Pos.x + xOffset + elapsedSec * m_direction.x * m_speed, Pos.y+4)
 		) {
 		Pos.x += elapsedSec * m_direction.x * m_speed;
 	}
 
-	if (currentLevel.IsPassable(Pos.x-4, Pos.y+yOffset + elapsedSec*m_direction.y * m_speed)
-		&& currentLevel.IsPassable(Pos.x+4, Pos.y + yOffset + elapsedSec*m_direction.y * m_speed)) {
+	if (currentLevel->IsPassable(Pos.x-4, Pos.y+yOffset + elapsedSec*m_direction.y * m_speed)
+		&& currentLevel->IsPassable(Pos.x+4, Pos.y + yOffset + elapsedSec*m_direction.y * m_speed)) {
 		Pos.y += elapsedSec * m_direction.y * m_speed;
 	}
 
@@ -98,7 +100,6 @@ void Hero::SetSpeed(float xSpeed, float ySpeed)
 {
 	m_direction= Point2f(xSpeed,ySpeed);
 }
-
 
 
 

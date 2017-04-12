@@ -18,3 +18,7 @@ Week 05
 	Screens worden getekent
 	Tiles worden uit een string gelezen (needs more info+out of file next)
 	Scale kan worden ingesteld met + en - (resolution options)
+	
+Week 06
+	Tiles hebben collision
+	Mogenlijk om te vinden op welke tile iets zich bevint in een kamer
