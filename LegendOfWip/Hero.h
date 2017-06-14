@@ -9,21 +9,19 @@ public:
 	enum direction{ left,right,up,down };
 	enum State{standing, walking, pushing, attacking};
 
-	Hero(std::string TexturePath);
-	virtual void Draw() override;
-	void Update(float elapsedSec, std::unique_ptr<Room> &currentLevel);
+	Hero();
+	virtual void Draw(const Color4f&  overlayColor = Color4f(1,1,1, 1)) const override;
+	void Update(const float & elapsedSec,const std::unique_ptr<Room> &currentLevel) override;
+
+	void Animate(const float & elapsedSec);
 
 	void SetXSpeed(float xSpeed);
 	void SetYSpeed(float ySpeed);
 	void SetSpeed(float xSpeed, float ySpeed);
+	int MaxHealth();
 
-protected:
-	Point2f m_direction{ 0.0f,0.0f };
-	float m_TextureHeight;
-	float m_secCounter{ 0 };
-	float FPS = 4;
+	Point2f GetDirection();
 
 	//float m_speed{ 64 };
-	float m_speed{ 32 };
 };
 

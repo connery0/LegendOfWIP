@@ -1,6 +1,17 @@
 Tom Partoens	1DAE17
 The Legend of WIP 	(working title)
 
+	#####################################################
+	#	Controls:										#
+	#		Pijltjes toetsen :	Bewegen					#
+	#		Linker muisknop  :	Plaats Aanval 			#
+	#													#
+	#	Debug Controls:									#
+	#		+ :	Teleporteer naar dungeon map/overworld	#
+	#		- : Teleporteer naar start postie			#
+	#													#
+	#####################################################
+	
 Gameplay is gebaseerd op 2d The legend of Zelda games, maar met nieuwe items.
 
 Week 03
@@ -22,3 +33,27 @@ Week 05
 Week 06
 	Tiles hebben collision
 	Mogenlijk om te vinden op welke tile iets zich bevint in een kamer
+	
+Week 07
+	Tiles/achtergrond hebben animaties.
+	Map word getekent met behulp van json map bestanden (gemaakt in Tiled, uitgelezen met third party klasse)
+	Kan verplaatsen naar nieuwe kamers
+	Kamers kunnen Monsters bevatten (geplaatst in Tiled)
+	Alpha versie van projectiles (enkel hero wapen voorlopig)
+	Alle monsters hebben contact damage, en nemen damage van projectiles 
+	LikeLike monster heeft "AI"
+	Achtergrond muziek
+	Hitsounds voor link
+
+Week 08
+	Verbeterde spritesheet (alle enemys zijn gepositioneerd)
+	
+Week 09
+	CodeImprovements (not finished)
+	Werkt met verschillende map files (voor overworld/dungeon/houses)
+	Teleport code (to be used for doors)	
+
+Week 10
+	(health) Pickup object met typedef en variabels
+	Pickup hittest (voor alle entities)
+	Verwijder dode monsters van vector (needs improvements!)

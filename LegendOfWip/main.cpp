@@ -7,12 +7,9 @@ int main( int argc, char *argv[] )
 {
 	srand(int(time(nullptr)));
 	{ // make sure stack objects go out of scope before _CrtDumpMemoryLeaks is called
-		StartHeapControl();
-
-		//Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 160.0f, 160.0f } };
-
-		Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 800.0f, 800.0f } };
-		//Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 1280.0f, 800.0f } };
+		//StartHeapControl();
+		
+		Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 400.0f, 400.0f } };
 		//Core core{ Window{ "Gam3 - Partoens Tom- 1DAE17", 1200.0f, 700.0f} };
 		core.Run();
 	}
@@ -30,7 +27,7 @@ void StartHeapControl( )
 	_CrtSetDbgFlag( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 
 	// Set a breakpoint on the specified object allocation order number
-	//_CrtSetBreakAlloc( 156 );
+	_CrtSetBreakAlloc(143);
 #endif
 }
 

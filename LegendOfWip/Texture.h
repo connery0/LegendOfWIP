@@ -11,8 +11,9 @@ public:
 	Texture& operator=( const Texture& other ) = delete;
 	~Texture();
 
-	void Draw( const Point2f& destBottomLeft = {}, const Rectf& srcRect = {} ) const;
-	void Draw( const Rectf& destRect, const Rectf& srcRect = {} ) const;
+	//void Draw( const Point2f& destBottomLeft = {}, const Rectf& srcRect = {} ) const;
+	void Draw(const Point2f & dstBottomLeft, const Rectf & srcRect, const Color4f & overlayColor = Color4f(1, 1, 1, 1)) const;
+	void Draw( const Rectf& destRect, const Rectf& srcRect = {}, const Color4f & overlayColor = Color4f(1, 1, 1, 1)) const;
 
 	float GetWidth() const;
 	float GetHeight() const;

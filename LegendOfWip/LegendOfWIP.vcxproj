@@ -142,10 +142,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Core.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyConstructor.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="Game.h" />
@@ -153,26 +153,47 @@
     <ClInclude Include="HeroFrames.h" />
     <ClInclude Include="json\json-forwards.h" />
     <ClInclude Include="json\json.h" />
+    <ClInclude Include="Likelike.h" />
+    <ClInclude Include="Moblin_Blue.h" />
+    <ClInclude Include="Moblin_Red.h" />
+    <ClInclude Include="MonsterFrames_Likelike.h" />
+    <ClInclude Include="MonsterFrames_Moblin_blue.h" />
+    <ClInclude Include="MonsterFrames_Moblin_red.h" />
+    <ClInclude Include="Pickup.h" />
+    <ClInclude Include="PickupInt.h" />
+    <ClInclude Include="Projectile.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="Matrix2x3.h" />
-    <ClInclude Include="Screen.h" />
+    <ClInclude Include="SoundEffect.h" />
+    <ClInclude Include="SoundStream.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="structs.h" />
+    <ClInclude Include="SwordFrames.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="Tile.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="Vector2f.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="jsoncpp.cpp" />
+    <ClCompile Include="Likelike.cpp" />
+    <ClCompile Include="Moblin_Blue.cpp" />
+    <ClCompile Include="Moblin_Red.cpp" />
+    <ClCompile Include="Pickup.cpp" />
+    <ClCompile Include="PickupInt.cpp" />
+    <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrix2x3.cpp" />
-    <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="SoundEffect.cpp" />
+    <ClCompile Include="SoundStream.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -181,6 +202,7 @@
     </ClCompile>
     <ClCompile Include="structs.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Tile.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="Vector2f.cpp" />
   </ItemGroup>

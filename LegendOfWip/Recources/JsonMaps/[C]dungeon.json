@@ -1,0 +1,16 @@
+{
+ "rooms":[
+		{
+		"file":"Recources/JsonMaps/dungeonTest1.json",
+		"x":0,
+		"y":160,
+		"w":10,
+		"h":10		
+		},{
+		"file":"Recources/JsonMaps/dungeonTest2.json",
+		"x":0,
+		"y":320,
+		"w":10,
+		"h":10				
+		}]
+}

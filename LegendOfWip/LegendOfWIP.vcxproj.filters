@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="FrameDefinitions">
       <UniqueIdentifier>{29973470-19f9-4ee5-b4fb-7956868abdaa}</UniqueIdentifier>
     </Filter>
@@ -16,34 +8,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Framework/.h Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Framework/.h Files\GameHeaders">
+      <UniqueIdentifier>{1c30c2f2-6ad5-45cf-af02-42279b33a0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework/.h Files\Framework">
+      <UniqueIdentifier>{5ceadef5-f44c-4011-8303-7a6aaf72d9eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework/.h Files\EnemyHeaders">
+      <UniqueIdentifier>{b477f2f8-da8a-4c8e-b3f4-c45d423f8084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Game Files\Enemies">
+      <UniqueIdentifier>{ffe7b49a-bb78-45a3-9c1a-0b6b4cca4492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\GameCpp">
+      <UniqueIdentifier>{64424c1b-d60a-4fab-827c-5ff886c759ba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Matrix2x3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="structs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="utils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="HeroFrames.h">
       <Filter>FrameDefinitions</Filter>
-    </ClInclude>
-    <ClInclude Include="Screen.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="json\json.h">
       <Filter>ThirdParty</Filter>
@@ -51,70 +42,166 @@
     <ClInclude Include="json\json-forwards.h">
       <Filter>ThirdParty</Filter>
     </ClInclude>
+    <ClInclude Include="MonsterFrames_Moblin_red.h">
+      <Filter>FrameDefinitions</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterFrames_Moblin_blue.h">
+      <Filter>FrameDefinitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Moblin_Blue.h">
+      <Filter>Framework/.h Files\EnemyHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Moblin_Red.h">
+      <Filter>Framework/.h Files\EnemyHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Framework/.h Files\GameHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Framework/.h Files\GameHeaders</Filter>
+    </ClInclude>
     <ClInclude Include="Entity.h">
-      <Filter>Header Files</Filter>
+      <Filter>Framework/.h Files\GameHeaders</Filter>
     </ClInclude>
     <ClInclude Include="Frame.h">
-      <Filter>Header Files</Filter>
+      <Filter>Framework/.h Files\GameHeaders</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
+      <Filter>Framework/.h Files\GameHeaders</Filter>
     </ClInclude>
     <ClInclude Include="Hero.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector2f.h">
-      <Filter>Header Files</Filter>
+      <Filter>Framework/.h Files\GameHeaders</Filter>
     </ClInclude>
     <ClInclude Include="Room.h">
-      <Filter>Header Files</Filter>
+      <Filter>Framework/.h Files\GameHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2x3.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2f.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterFrames_Likelike.h">
+      <Filter>FrameDefinitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Likelike.h">
+      <Filter>Framework/.h Files\EnemyHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffect.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundStream.h">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Framework/.h Files\GameHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SwordFrames.h">
+      <Filter>FrameDefinitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Framework/.h Files\GameHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Pickup.h">
+      <Filter>Framework/.h Files\GameHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyConstructor.h">
+      <Filter>Framework/.h Files\EnemyHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PickupInt.h">
+      <Filter>Game Files\GameCpp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Entity.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Hero.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Core.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Matrix2x3.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="structs.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="utils.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector2f.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Screen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="jsoncpp.cpp">
       <Filter>ThirdParty</Filter>
     </ClCompile>
+    <ClCompile Include="Moblin_Red.cpp">
+      <Filter>Game Files\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Moblin_Blue.cpp">
+      <Filter>Game Files\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix2x3.cpp">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="structs.cpp">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2f.cpp">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Likelike.cpp">
+      <Filter>Game Files\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffect.cpp">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundStream.cpp">
+      <Filter>Framework/.h Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Pickup.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
     <ClCompile Include="Room.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Game Files\GameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="PickupInt.cpp">
+      <Filter>Game Files\GameCpp</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -178,21 +178,23 @@ void Texture::CreateFromSurface( SDL_Surface *pSurface )
 
 }
 
-void Texture::Draw( const Point2f& dstBottomLeft, const Rectf& srcRect ) const
+void Texture::Draw(const Point2f& dstBottomLeft, const Rectf& srcRect, const Color4f& overlayColor) const
 {
-	if ( !m_CreationOk )
+
+	if (!m_CreationOk)
 	{
-		DrawFilledRect( dstBottomLeft );
+		DrawFilledRect(dstBottomLeft);
 	}
 	else
 	{
 		Rectf vertexRect{ dstBottomLeft.x, dstBottomLeft.y, m_Width, m_Height };
-		Draw( vertexRect, srcRect );
+		Draw(vertexRect, srcRect, overlayColor);
 	}
 }
 
-void Texture::Draw( const Rectf& destRect, const Rectf& srcRect ) const
+void Texture::Draw( const Rectf& destRect, const Rectf& srcRect, const Color4f & overlayColor) const
 {
+	utils::SetColor(overlayColor);
 	if ( !m_CreationOk )
 	{
 		DrawFilledRect( { destRect.left,destRect.bottom } );
@@ -235,10 +237,12 @@ void Texture::Draw( const Rectf& destRect, const Rectf& srcRect ) const
 		vertexTop = vertexBottom + destRect.height;
 
 	}
+	
 
 	// Tell opengl which texture we will use
 	glBindTexture( GL_TEXTURE_2D, m_Id );
-	glTexEnvi( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE );
+	//glTexEnvi( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_SUBTRACT );
+	//glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_ADD);
 
 	// Draw
 	glEnable( GL_TEXTURE_2D );

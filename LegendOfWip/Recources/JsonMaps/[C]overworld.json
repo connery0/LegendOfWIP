@@ -30,5 +30,11 @@
 		"y":320,
 		"w":10,
 		"h":20
+		},{
+		"file":"Recources/JsonMaps/FreeRoam20x20.json",
+		"x":480,
+		"y":320,
+		"w":10,
+		"h":20
 		}]
 }

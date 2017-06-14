@@ -1,0 +1,5 @@
+Made by: Tom Partoens
+Module: prog 1
+Description:
+	A recreation of the Game Boy Color games "oracle of ages/seasons"
+	But with new areas and items to discover
